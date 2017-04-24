@@ -6,7 +6,7 @@ class Square extends React.Component {
   render() {
     return (
       <button className="square">
-        {this.props.length}
+        {this.props.value}
       </button>
     );
   }
@@ -14,7 +14,7 @@ class Square extends React.Component {
 
 class Board extends React.Component {
   renderSquare(i) {
-    return <Square value={i} potato="french" />;
+    return <Square value={i} />;
   }
   render() {
     const status = 'Next player: X';
